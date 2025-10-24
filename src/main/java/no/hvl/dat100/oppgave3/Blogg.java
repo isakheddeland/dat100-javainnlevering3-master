@@ -8,15 +8,18 @@ public class Blogg {
 	// TODO: objektvariable 
 
 	public Blogg() {
-		throw new UnsupportedOperationException(TODO.constructor("Blogg"));
+
+        throw new UnsupportedOperationException(TODO.constructor("Blogg"));
 	}
 
 	public Blogg(int lengde) {
-		throw new UnsupportedOperationException(TODO.constructor("Blogg"));
+
+        throw new UnsupportedOperationException(TODO.constructor("Blogg"));
 	}
 
 	public int getAntall() {
-		throw new UnsupportedOperationException(TODO.method());
+
+        throw new UnsupportedOperationException(TODO.method());
 	}
 	
 	public Innlegg[] getSamling() {

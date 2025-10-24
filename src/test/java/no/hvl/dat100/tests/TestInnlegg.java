@@ -65,6 +65,8 @@ public class TestInnlegg {
 	public void testtoString () {
 		
 		TInnlegg innlegg = new TInnlegg(1,"Ole Olsen","23-10");
+//        System.out.println("kode lagt inn manuelt i test metoden for toString: ");
+//        System.out.println(innlegg.toString());
 
 		assertEquals("1\nOle Olsen\n23-10\n0\n",innlegg.toString());
 
