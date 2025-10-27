@@ -44,33 +44,33 @@ public class Blogg {
 	public boolean finnes(Innlegg innlegg) {
 		boolean funnet = false;
 
-        for (int i = 0; i < nesteledig; i++){
+        for (int i = 0; i < nesteledig; i++) {
             if (innleggtabell[i].erLik(innlegg)) {
                 funnet = true;
             }
-
-            return funnet;
+        }
+        return funnet;
 	}
 
 	public boolean ledigPlass() {
         return nesteledig < innleggtabell.length;
-        }
+
 
 	}
 	
 	public boolean leggTil(Innlegg innlegg) {
 
-        if (finnes(innlegg)){
+        if (finnes(innlegg)) {
             return false;
+        }
 
-
-        while (nesteledig < innleggtabell.length){
+        if (nesteledig < innleggtabell.length){
             innleggtabell[nesteledig] = innlegg;
             nesteledig++;
             return true;
 
-            }
         }
+
         return false;
 
 	}
